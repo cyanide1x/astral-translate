@@ -1,0 +1,285 @@
+@font-face {
+    font-family: Euclid;
+    font-weight: 400;
+    src: url(https://hype4.academy/_next/static/media/EuclidCircularB-Regular-WebS.938a7e58.woff2);
+    font-display: swap
+}
+
+@font-face {
+    font-family: Euclid;
+    font-weight: 500;
+    src: url(https://hype4.academy/_next/static/media/EuclidCircularB-Medium.5e4f787f.woff2);
+    font-display: swap
+}
+
+@font-face {
+    font-family: Euclid;
+    font-weight: 600;
+    src: url(https://hype4.academy/_next/static/media/EuclidCircularB-Semibold-WebS.9bf9fec0.woff2);
+    font-display: swap
+}
+
+@font-face {
+    font-family: Euclid;
+    font-weight: 700;
+    src: url(https://hype4.academy/_next/static/media/EuclidCircularB-Bold.baa2c88e.woff2);
+    font-display: swap
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #5095e4;
+    font-family: Euclid, sans-serif, Arial, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.title {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 35px;
+    width: 100vh;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    margin-top: 50px;
+}
+
+.title h2 {
+    font-size: 6vh;
+    filter: drop-shadow(0 0 35px #000);
+}
+
+.title p {
+    font-size: 3vh;
+    filter: drop-shadow(0 0 35px #000);
+}
+
+.title ion-icon {
+    height: 100px;
+    width: 100px;
+    padding-bottom: 20px;
+    color: #89b5f0;
+    filter: drop-shadow(0 0 35px #000);
+}
+
+.box-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.box-area li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 20s linear infinite;
+    bottom: -150px;
+}
+
+.box-area li:nth-child(1) {
+    left: 86%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.box-area li:nth-child(2) {
+    left: 12%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+}
+
+.box-area li:nth-child(3) {
+    left: 70%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5.5s;
+}
+
+.box-area li:nth-child(4) {
+    left: 42%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+}
+
+.box-area li:nth-child(5) {
+    left: 65%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+}
+
+.box-area li:nth-child(6) {
+    left: 15%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3.5s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.container .translate {
+    flex-direction: row;
+}
+
+.container .translate .input {
+    position: relative;
+    margin: 100px auto;
+    width: 370px;
+    height: 175px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.container .translate .input h1 {
+    line-height: 55px;
+    font-size: 24px;
+
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    margin-top: 0px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.container .translate .output {
+    position: relative;
+    margin: 100px auto;
+    width: 370px;
+    height: 175px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.container .translate .output h1 {
+    line-height: 55px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    margin-top: 0px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.form {
+    width: 100%;
+}
+
+.form .field {
+    position: relative;
+    margin: 25px 50px;
+}
+
+::-webkit-input-placeholder {
+    color: #ffffff;
+    font-family: "Open Sans";
+}
+
+.form input[type=text],
+input[type=input] {
+    font-family: "Open Sans", Calibri, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 15px 10px 55px;
+    position: relative;
+    width: 200px;
+    height: 24px;
+
+    border: none;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease-out;
+}
+
+.form input[type=text] {
+    margin-bottom: 15px;
+}
+
+/*continued styling for input */
+.form input[type=checkbox] {
+    display: none;
+}
+
+.form .field ion-icon {
+    font-size: 18px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    height: 44px;
+    width: 44px;
+    color: #f7f3eb;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    line-height: 44px;
+    transition: all 0.3s ease-out;
+    pointer-events: none;
+}
