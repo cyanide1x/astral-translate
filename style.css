@@ -175,7 +175,7 @@ body {
     font-size: 24px;
 
     font-weight: bold;
-    font-family: "Open Sans", sans-serif;
+    font-family: Euclid, sans-serif, Arial, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
     text-transform: uppercase;
     color: #fff;
     text-align: center;
@@ -206,7 +206,7 @@ body {
     line-height: 55px;
     font-size: 24px;
     font-weight: bold;
-    font-family: "Open Sans", sans-serif;
+    font-family: Euclid, sans-serif, Arial, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
     text-transform: uppercase;
     color: #fff;
     text-align: center;
@@ -231,12 +231,12 @@ body {
 
 ::-webkit-input-placeholder {
     color: #ffffff;
-    font-family: "Open Sans";
+    font-family: Euclid, sans-serif, Arial, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
 }
 
 .form input[type=text],
 input[type=input] {
-    font-family: "Open Sans", Calibri, Arial, sans-serif;
+    font-family: Euclid, sans-serif, Arial, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
     font-size: 14px;
     font-weight: 400;
     padding: 10px 15px 10px 55px;
